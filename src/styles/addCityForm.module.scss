@@ -1,0 +1,26 @@
+@use '../styles/variables.scss' as vars;
+
+.form {
+  padding: vars.$padding-sm-x;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  @include vars.media-sm {
+    flex-direction: column;
+  }
+
+  @include vars.media-md {
+    flex-direction: row;    
+  }
+}
+
+.input{
+  padding: vars.$padding-sm-x vars.$padding-sm-y;
+  border:2px solid vars.$gray-color;
+  margin: vars.$padding-sm-x;
+  font-size: vars.$fs-text;
+  border-radius: 25px;
+  max-width: 1200px;
+  width: 100%;
+}

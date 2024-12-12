@@ -1,0 +1,5 @@
+@use './variables.scss' as vars;
+
+.h1{
+  color: vars.$red-color;
+}

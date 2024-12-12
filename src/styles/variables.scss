@@ -1,0 +1,41 @@
+//Colors
+$black-color: #000;
+$white-color: #fff;
+$gray-color: gray;
+$silver-color: #f4f4f4;
+
+//Font size
+$fs-main-title: 50px;
+$fs-title: 40px;
+$fs-subtitle: 30px;
+$fs-text: 18px;
+
+//Paddings and Margins
+$padding-lg-x: 40px;
+$padding-sm-x: 20px;
+$padding-sm-y: 10px;
+$padding-lg-y: 20px;
+
+// Media
+$breakpoint-sm: 0px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1400px;
+
+// Медіа requests in mixins
+@mixin media-sm {
+  @media screen and (min-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (min-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: $breakpoint-lg) {
+    @content;
+  }
+}

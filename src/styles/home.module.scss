@@ -1,0 +1,95 @@
+@use './variables.scss' as vars;
+
+.wrapper {
+  max-width: vars.$breakpoint-lg;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+
+  @include vars.media-sm {
+    padding: vars.$padding-sm-x vars.$padding-sm-y;
+  }
+
+  @include vars.media-md {
+    padding: vars.$padding-lg-x vars.$padding-lg-y;
+  }
+
+  @include vars.media-lg {
+    padding: vars.$padding-lg-x vars.$padding-lg-y;
+  }
+}
+
+.title {
+  padding: vars.$padding-sm-x vars.$padding-sm-y;
+  @include vars.media-sm {
+    font-size: vars.$fs-title;
+  }
+
+  @include vars.media-md {
+    font-size: vars.$fs-main-title;
+  }
+
+  @include vars.media-lg {
+    font-size: vars.$fs-main-title;
+  }
+}
+
+.title_container {
+  display: flex;
+}
+
+.title_image {
+  @include vars.media-sm {
+    height: 25px;
+    width: 25px;
+  }
+
+  @include vars.media-md {
+    height: 35px;
+    width: 35px;
+  }
+
+  @include vars.media-lg {
+    height: 55px;
+    width: 55px;
+  }
+}
+
+.description {
+  padding: vars.$padding-sm-x vars.$padding-sm-y;
+  @include vars.media-sm {
+    font-size: vars.$fs-text;
+  }
+
+  @include vars.media-md {
+    font-size: vars.$fs-subtitle;
+  }
+
+  @include vars.media-lg {
+    font-size: vars.$fs-subtitle;
+  }
+}
+
+.subtitle {
+  padding: vars.$padding-sm-x vars.$padding-sm-y;
+  @include vars.media-sm {
+    font-size: vars.$fs-text;
+  }
+
+  @include vars.media-md {
+    font-size: vars.$fs-subtitle;
+  }
+
+  @include vars.media-lg {
+    font-size: vars.$fs-subtitle;
+  }
+}
+
+.city_list {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}

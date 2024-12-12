@@ -1,0 +1,16 @@
+@use './variables.scss' as vars;
+
+.button {
+  padding: vars.$padding-sm-x vars.$padding-sm-y;
+  border: 2px solid vars.$gray-color;
+  margin: vars.$padding-sm-y;
+  font-size: vars.$fs-text;
+  border-radius: 25px;
+  max-height: 65px;
+  max-width: 300px;
+  width: 100%;
+  &:hover {
+    background-color: vars.$gray-color;
+    color: vars.$white-color;
+  }
+}
