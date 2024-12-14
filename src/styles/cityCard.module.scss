@@ -20,3 +20,15 @@
   padding: vars.$padding-sm-y;
   font-size: vars.$fs-text;
 }
+
+.link {
+  color: vars.$black-color;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  z-index: 50;
+}
+
+.graf {
+  padding: vars.$padding-sm-x;
+}

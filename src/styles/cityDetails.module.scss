@@ -21,6 +21,20 @@
   margin: 0 auto;
 }
 
+.container {
+  padding: vars.$padding-sm-x;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  @include vars.media-sm {
+    flex-direction: column;
+  }
+  @include vars.media-lg {
+    flex-direction: row;
+  }
+}
+
 .table {
   font-size: vars.$white-color;
   border-collapse: collapse;
@@ -39,4 +53,8 @@
   border: 2px solid vars.$gray-color;
   padding: vars.$padding-sm-x;
   text-align: center;
+}
+
+.graf {
+  max-width: 700px;
 }
