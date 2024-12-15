@@ -19,6 +19,8 @@ This project is a web application for checking the weather in various cities wit
 
 ## 📁 Project Structure
 
+```
+
 src/
 ├── components/ // Application components
 │ ├── CityCard.tsx // Displays a single city’s weather information
@@ -33,6 +35,7 @@ src/
 ├── styles/ // Project styles
 │ ├── cityCard.module.scss
 └── App.tsx // Main app component
+```
 
 ---
 
