@@ -59,5 +59,5 @@ cd weather-app
 
 npm install
 
-npm start
+npm run dev
 ```
