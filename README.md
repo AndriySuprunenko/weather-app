@@ -1,50 +1,60 @@
-# React + TypeScript + Vite
+# Weather App 🌦
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a web application for checking the weather in various cities with functionality for updating forecasts, removing cities, and viewing detailed weather information for each city. The app is built using **React**, **Redux Toolkit**, and supports routing via **React Router**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- **Home Page**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+  - Add cities to check the weather.
+  - Update and delete city weather data.
+  - Display a list of cities with basic weather information.
 
-- Configure the top-level `parserOptions` property like this:
+- **Detailed Page**
+  - View detailed weather information for a selected city, including hourly forecasts.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 📁 Project Structure
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+src/
+├── components/ // Application components
+│ ├── CityCard.tsx // Displays a single city’s weather information
+├── elements/ // Reusable components
+│ ├── Button.tsx // Button for actions
+├── pages/ // Application pages
+│ ├── Home.tsx // Main page
+│ ├── CityDetails.tsx // Detailed city weather page
+├── store/ // Redux logic
+│ ├── slices/ // Reducers for cities and weather
+│ ├── index.ts // Redux Store configuration
+├── styles/ // Project styles
+│ ├── cityCard.module.scss
+└── App.tsx // Main app component
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+---
+
+## 🛠 Technologies
+
+- **React** (with TypeScript)
+- **Redux Toolkit** — state management.
+- **React Router** — routing.
+- **SCSS** — styles.
+- **Jest + Testing Library** — unit testing.
+
+---
+
+## 📦 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/username/weather-app.git
+cd weather-app
+
+npm install
+
+npm start
 ```
