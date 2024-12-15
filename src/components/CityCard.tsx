@@ -31,10 +31,13 @@ const CityCard: React.FC<CityCardProps> = ({
 
   return (
     <div className={style.city_card}>
-      <h3 className={style.name}>{name}</h3>
-      <p className={style.weather}>Weather: {weather}</p>
-      <p className={style.weather}>Temperature: {Math.round(temperature)}°C</p>
-      <Link to={`/city/${id}`}>Деталі</Link>
+      <Link className={style.link} to={`/city/${id}`}>
+        <h3 className={style.name}>{name}</h3>
+        <p className={style.weather}>Weather: {weather}</p>
+        <p className={style.weather}>
+          Temperature: {Math.round(temperature)}°C
+        </p>
+      </Link>
       <Button text='Update' handleClick={handleRefresh} />
       <Button text='Delete' handleClick={handleRemove} />
     </div>

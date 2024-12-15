@@ -19,7 +19,7 @@ const Home: React.FC = () => {
       </div>
       <p className={style.description}>The best way to know your weather</p>
       <AddCityForm />
-      <h2 className={style.subtitle}>Список міст</h2>
+      <h2 className={style.subtitle}>List of cities</h2>
       <div className={style.city_list}>
         {cities.map((city) => (
           <CityCard
