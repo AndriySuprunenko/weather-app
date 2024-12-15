@@ -54,7 +54,7 @@ src/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/username/weather-app.git
+git clone https://github.com/AndriySuprunenko/weather-app.git
 cd weather-app
 
 npm install
